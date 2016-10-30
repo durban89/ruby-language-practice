@@ -34,7 +34,24 @@ case choice
 			books[title.to_sym] = rating.to_i
 			puts "Your rating of #{title} has benn updated to #{rating}"
 		end
-	
+
+	when "delete"
+		puts "What title would you like removed"
+		title = gets.chomp.to_sym
+		if books[title].nil?
+			puts "That title doesn't exist anyways"
+		else 
+			books.delete(title)
+		end
+
+	when "list"
+		books.each do |book, rating|
+			puts "#{book}:#{rating}"
+		end
+
+	else
+		puts "Error! You've broken something!"
+	end
+
 	puts books
 	
-	end
