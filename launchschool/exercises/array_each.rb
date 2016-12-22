@@ -8,3 +8,14 @@ arr.each { |number| puts number }
 arr.each do |number|
   puts number
 end
+
+# greater than 5
+# one line version
+arr.each { |number| puts number if number > 5}
+
+# multi-line version
+arr.each do |number|
+  if number > 5
+    puts number
+  end
+end
