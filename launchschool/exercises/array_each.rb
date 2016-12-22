@@ -29,3 +29,13 @@ new_array = arr.select do |number|
   number % 2 == 0
 end
 puts new_array
+
+# Append 11 to end and append 0 to begin
+arr.push(11)
+# or
+# arr << 11
+# prepend
+arr.unshift(0)
+
+puts arr
+
