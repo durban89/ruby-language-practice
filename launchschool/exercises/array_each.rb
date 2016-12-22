@@ -19,3 +19,13 @@ arr.each do |number|
     puts number
   end
 end
+
+#  extract all odd numbers into a new array.
+# one line version
+new_array = arr.select { |number| number % 2 == 0 }
+puts new_array
+# multi-line version
+new_array = arr.select do |number|
+  number % 2 == 0
+end
+puts new_array
