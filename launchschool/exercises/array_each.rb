@@ -46,4 +46,9 @@ arr << 3
 # arr.push(3)
 puts arr
 
+# unique value
+# no modify object
+puts arr.uniq
+# modify object
+puts arr.uniq!
 
