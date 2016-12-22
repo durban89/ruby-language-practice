@@ -39,3 +39,11 @@ arr.unshift(0)
 
 puts arr
 
+# remove from array
+arr.pop
+arr << 3
+# or
+# arr.push(3)
+puts arr
+
+
