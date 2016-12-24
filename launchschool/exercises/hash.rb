@@ -27,3 +27,11 @@ h.delete_if do |k,v|
   v < 3.5
 end
 puts h
+
+# hash vales as array
+hash = { names: ['bob','joe','susan']}
+puts hash
+
+# array of hash
+arr = [{names:'bob'},{names:'joe'},{names:'susan'}]
+puts arr.to_s
