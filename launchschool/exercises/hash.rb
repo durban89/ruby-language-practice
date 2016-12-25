@@ -85,3 +85,13 @@ arr.delete_if { |word| word.start_with?('s')}
 puts arr
 arr.delete_if { |word| word.start_with?('s','w')}
 puts arr
+
+# turn it into a new array that consists of strings containing one word
+arr1 = ['white snow', 'winter wonderland', 'melting ice',
+     'slippery sidewalk', 'salted roads', 'white trees']
+
+arr1 = arr1.map { |pairs| pairs.split }
+arr1 = arr1.flatten
+p arr1
+
+
