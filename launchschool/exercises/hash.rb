@@ -79,3 +79,9 @@ contacts.each_with_index do |(name, hash), index|
 end
 puts contacts
 
+# delete all of the words that begin with an "s"
+arr = ["snow","winter","ice","slippery","salted roads","white trees"]
+arr.delete_if { |word| word.start_with?('s')}
+puts arr
+arr.delete_if { |word| word.start_with?('s','w')}
+puts arr
