@@ -7,6 +7,10 @@ class GoodDog
     @name
   end
 
+  def set_name=(name)
+    @name = name
+  end
+
   def speak
     "#{@name} speak Arf!"
   end
@@ -14,6 +18,8 @@ end
 
 sparky = GoodDog.new("Sparky")
 puts sparky.speak
+puts sparky.get_name
+sparky.set_name = "Spartacus"
 puts sparky.get_name
 
 fido = GoodDog.new("Fido")
