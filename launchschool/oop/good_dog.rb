@@ -5,7 +5,12 @@ module Speak
 end
 
 class GoodDog
+  
   include Speak
+
+  def initialize
+    puts "This Object wat initialized"
+  end
 end
 
 class HumanBeing
@@ -20,5 +25,6 @@ puts HumanBeing.ancestors
 
 sparky = GoodDog.new
 sparky.speak("Arf!")
+
 bob = HumanBeing.new
 bob.speak("Hello!")
