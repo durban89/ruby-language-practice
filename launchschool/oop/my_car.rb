@@ -29,6 +29,10 @@ class MyCar
     puts "Let's park this bad boy!"
   end
 
+  def spary_paint(color)
+    self.color = color
+    puts "Your new #{color} paint  job looks great!"
+  end
 end
 
 lumina = MyCar.new(1997,"chevy lumina",'white')
@@ -48,3 +52,6 @@ puts lumina.year
 lumina.color = 'black'
 puts lumina.color
 puts lumina.year
+
+lumina.spary_paint("read")
+puts lumina.color
