@@ -1,4 +1,8 @@
 class MyCar
+
+  attr_accessor :color
+  attr_reader :year
+
   def initialize(year, model, color)
     @year = year
     @model = model
@@ -38,3 +42,9 @@ lumina.brake(20)
 lumina.current_speed
 lumina.shut_down
 lumina.current_speed
+
+puts lumina.color
+puts lumina.year
+lumina.color = 'black'
+puts lumina.color
+puts lumina.year
