@@ -1,11 +1,10 @@
-class GoodDog
-  DOG_YEARs = 7
+class GoodDog DOG_YEARs = 7
 
   attr_accessor :name, :age
 
   @@number_of_dogs = 0
 
-  def initialize(n,a)
+  def initialize(n,a) 
     @@number_of_dogs += 1
 
     self.name = n;
@@ -20,6 +19,10 @@ class GoodDog
   def self.what_am_i
     "I'm a GoodDog class!"
   end
+
+  def to_s
+    "This's dog's name is #{name} and it is #{age} in dog years."
+  end
 end
 
 puts GoodDog.total_number_of_dogs
@@ -32,6 +35,6 @@ puts GoodDog.total_number_of_dogs
 puts dog1.age
 puts dog2.age
 
+puts dog1
+puts dog1.to_s
 puts GoodDog.what_am_i
-
-
