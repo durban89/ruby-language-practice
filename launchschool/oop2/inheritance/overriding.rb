@@ -27,5 +27,5 @@ son = Child.new
 # son.send :say_hi
 
 c = Child.new
-# puts c.instance_of? Child
+puts c.instance_of? Child
 # puts c.instance_of? Parent
